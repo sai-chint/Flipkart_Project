@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign Up</title>
+<style>
+body{
+	background-color: lightblue
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome User !!!</h1>
+	<form action ="SignUp" method ="post">
+	<div style="text-align:center"> 
+	<h3>Register yourself.</h3>
+	</div>
+	FirstName:<div style="text-align:center">
+	<input type="text" name="FirstName" required>
+	</div>
+	LastName:  <div style="text-align:center">
+	<input type="text" name="LastName" required>
+	</div> 
+	UserName:<div style="text-align:center">
+	<input type="text" name="UserName" required>
+	</div>
+	Email:<div style="text-align:center">
+	<input type="text" name="Email" required>
+	</div>
+	Mobile Number:<div style="text-align:center"> 
+	<input type="number" name="Mobile Nmber" required
+			minlength="10" maxlength="10" size="10"	>
+			<span class="validity"></span>
+	</div>
+	Gender:<div style="text-align:center"> 
+	<input type="radio" name="Gender" value="Male" required>Male</input>
+	<input type="radio" name="Gender" value="Female" required>Female</input>
+	</div>
+	<br>
+	<div style="text-align:center"> 
+		<input type="submit" value="Submit">
+	</div>
+	</form>
+
+</body>
+</html>
