@@ -13,22 +13,33 @@ body{
 </head>
 <body>
 
-<h1>Welcome User !!!</h1>
-
-UserName :	
-	<div style="text-align:center"> 
-	<input type="text" name="UserName" required>
-	</div>
-Password :	
-	<div style="text-align:center"> 
-	<input type="password" name="Password" required>
-	</div><br>
+<h1>Welcome User !!!</h1><br>
+<form action="ValidateLoginServlet" method = "post">
+<table style="width:75%">
+	<tr>
+		<td>Email :</td>
+		<td><div style="text-align:center" >
+				<input type="text" style="width:55%" name="Email" required>
+			</div><br>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>Password :</td>	
+		<td><div style="text-align:center">
+				<input type="password" style="width:55%" name="Password" required>
+			</div><br>
+		</td>
+	</tr>
+		
+</table>		
 <div style="text-align:center"> 
-		<input type="submit" value="Login">
+		<a href = "Home.jsp"><button type="submit" >Login</button></a>
 	</div>
 <br>		
 <div style="text-align:center">
-	<a href="C:\Users\saichint\Documents\workspace-spring-tool-suite-4-4.1.1.RELEASE\Flipkart_Project\WebContent\Sign Up.html">New User? Sign Up</a>
+	<a href="Sign Up.html">New User? Sign Up</a>
 </div>		
+</form>
 </body>
 </html>

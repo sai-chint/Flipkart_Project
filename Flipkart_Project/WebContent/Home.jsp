@@ -90,9 +90,9 @@
         <div class="dropdown">
 		<button class="dropbtn">Electronics</button>
 		<div class="dropdown-content">
-					<a href="C:\Users\saichint\Documents\workspace-spring-tool-suite-4-4.1.1.RELEASE\Flipkart_Project\WebContent\Mobiles.html">Mobiles</a>
-					<a href="C:\Users\saichint\Documents\workspace-spring-tool-suite-4-4.1.1.RELEASE\Flipkart_Project\WebContent\Laptops.html">Laptops</a>
-					<a href="C:\Users\saichint\Documents\workspace-spring-tool-suite-4-4.1.1.RELEASE\Flipkart_Project\WebContent\Play Station.html">Play Station</a>
+					<a href="Mobiles.html">Mobiles</a>
+					<a href="Laptops.html">Laptops</a>
+					<a href="Play Station.html">Play Station</a>
 </div>
 </div>    	
         <div class="dropdown">
@@ -119,9 +119,20 @@
         	       	
       </ul>
       
+      
+
+ 	<% if(session.getAttribute("user")==null){
+        	%>
+     
+        <% } else { %>
+         <li><b>WELCOME</b>&nbsp<b>${welcome}</b></li>
+       <li><a href="Logout">LOGOUT</a></li>
+      
+       <%} %>
+      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="C:\Users\saichint\Documents\workspace-spring-tool-suite-4-4.1.1.RELEASE\Flipkart_Project\WebContent\Login.html"><span class="glyphicon glyphicon-user"></span> Login/Sign Up </a></li>
-        <li><a href="C:\Users\saichint\Documents\workspace-spring-tool-suite-4-4.1.1.RELEASE\Flipkart_Project\WebContent\Shopping Cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li><a href="Login.html"><span class="glyphicon glyphicon-user"></span> Login/Sign Up </a></li>
+        <li><a href="Shopping Cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
     </div>
   </div>
@@ -153,7 +164,7 @@
   <p>Online Store Copyright</p>  
   <form class="form-inline">Get deals:
     <input type="email" class="form-control" size="30" placeholder="Email">
-    <button type="button" class="btn btn-danger">Sign Up</button>
+    <a href ="Sign Up.html"> <button type="button" class="btn btn-danger">Sign Up</button></a>
   </form>
 </footer>
 

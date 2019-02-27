@@ -1,35 +1,37 @@
 package com.flipkart.connection;
 
-public class SignUp {
+public class SignUpPojo {
 	
-	String FisrtName;
+	String FirstName;
 	String LastName;
-	String UserName;
 	String Email;
+	String Password;
 	double MobileNumber;
 	String Gender;
 	
-	public SignUp() {
+	
+	public SignUpPojo() {
 		super();
 	}
 
-	public SignUp(String fisrtName, String lastName, String userName, String email, double mobileNumber,
-			String gender) {
+	public SignUpPojo(String firstName, String lastName, String email,String password, double mobileNumber, String gender) {
 		super();
-		FisrtName = fisrtName;
+		FirstName = firstName;
 		LastName = lastName;
-		UserName = userName;
 		Email = email;
+		Password = password;
 		MobileNumber = mobileNumber;
 		Gender = gender;
 	}
 
-	public String getFisrtName() {
-		return FisrtName;
+	
+
+	public String getFirstName() {
+		return FirstName;
 	}
 
-	public void setFisrtName(String fisrtName) {
-		FisrtName = fisrtName;
+	public void setFirstName(String firstName) {
+		FirstName = firstName;
 	}
 
 	public String getLastName() {
@@ -40,20 +42,20 @@ public class SignUp {
 		LastName = lastName;
 	}
 
-	public String getUserName() {
-		return UserName;
-	}
-
-	public void setUserName(String userName) {
-		UserName = userName;
-	}
-
 	public String getEmail() {
 		return Email;
 	}
 
 	public void setEmail(String email) {
 		Email = email;
+	}
+
+	public String getPassword() {
+		return Password;
+	}
+
+	public void setPassword(String password) {
+		Password = password;
 	}
 
 	public double getMobileNumber() {
@@ -74,8 +76,8 @@ public class SignUp {
 
 	@Override
 	public String toString() {
-		return "SignUp [FisrtName=" + FisrtName + ", LastName=" + LastName + ", UserName=" + UserName + ", Email="
-				+ Email + ", MobileNumber=" + MobileNumber + ", Gender=" + Gender + "]";
-	}
+		return "SignUpPojo [FisrtName=" + FirstName + ", LastName=" + LastName + ", Email=" + Email + ", Password="
+				+ Password + ", MobileNumber=" + MobileNumber + ", Gender=" + Gender + "]";
+	}	
 	
 }
